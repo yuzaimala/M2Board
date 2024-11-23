@@ -24,7 +24,15 @@ class CommController extends Controller
                 'commission_distribution_l1' => config('v2board.commission_distribution_l1'),
                 'commission_distribution_l2' => config('v2board.commission_distribution_l2'),
                 'commission_distribution_l3' => config('v2board.commission_distribution_l3'),
-                'deposit_bounus' => config('v2board.deposit_bounus', [])
+                'deposit_bounus' => config('v2board.deposit_bounus', []),
+                'invite_force' => (int)config('v2board.invite_force', 0),
+                'invite_commission' => config('v2board.invite_commission'),
+                'invite_gen_limit' => config('v2board.invite_gen_limit'),
+                'invite_never_expire' => (int)config('v2board.invite_never_expire', 0),
+                'commission_first_time_enable' => (int)config('v2board.commission_first_time_enable', 0),
+                'commission_auto_check_enable' => (int)config('v2board.commission_auto_check_enable', 0),
+                'commission_withdraw_limit' => config('v2board.commission_withdraw_limit'),
+                'withdraw_close_enable' => (int)config('v2board.withdraw_close_enable', 0)
             ]
         ]);
     }
