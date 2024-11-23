@@ -1,6 +1,3 @@
-<img src="https://avatars.githubusercontent.com/u/56885001?s=200&v=4" alt="logo" width="130" height="130" align="right"/>
-
-[![](https://img.shields.io/badge/TgChat-@UnOfficialV2board讨论-blue.svg)](https://t.me/unofficialV2board)
 
 ## 本分支支持的后端
  
@@ -17,7 +14,7 @@
     ./update.sh  
 
 
-按以下步骤刷新设置缓存，重启队列:
+按以下步骤刷新设置缓存，重启队列：
 
     php artisan config:clear
     php artisan config:cache
@@ -27,23 +24,11 @@
 
 # **V2Board**
 
+
+> 本仓库是从 [v2board](https://github.com/wyx2685/v2board) 分叉而来
+
 - PHP7.3+
 - Composer
 - MySQL5.5+
 - Redis
 - Laravel
-
-## Demo
-[Demo](https://demo.v2board.com)
-
-## Document
-[Click](https://v2board.com)
-
-## Sponsors
-Thanks to the open source project license provided by [Jetbrains](https://www.jetbrains.com/)
-
-## Community
-🔔Telegram Group: [@unofficialV2board](https://t.me/unofficialV2board)  
-
-## How to Feedback
-Follow the template in the issue to submit your question correctly, and we will have someone follow up with you.
