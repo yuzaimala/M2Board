@@ -22,3 +22,5 @@ yarn.lock
 docker-compose.yml
 .DS_Store
 public/clients/*
+
+test.txt
