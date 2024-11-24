@@ -31,8 +31,7 @@ class CommController extends Controller
                 'invite_never_expire' => (int)config('v2board.invite_never_expire', 0),
                 'commission_first_time_enable' => (int)config('v2board.commission_first_time_enable', 0),
                 'commission_auto_check_enable' => (int)config('v2board.commission_auto_check_enable', 0),
-                'commission_withdraw_limit' => config('v2board.commission_withdraw_limit'),
-                'withdraw_close_enable' => (int)config('v2board.withdraw_close_enable', 0)
+                'commission_withdraw_limit' => config('v2board.commission_withdraw_limit')
             ]
         ]);
     }
