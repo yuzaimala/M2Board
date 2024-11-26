@@ -2,7 +2,6 @@
 
 namespace App\Services;
 
-
 use App\Models\Payment;
 
 class PaymentService
@@ -36,7 +35,7 @@ class PaymentService
         return $this->payment->notify($params);
     }
 
-    public function pay($order, $referer)
+    public function pay($order, $referer = null)
     {
         // custom notify domain name
         $notifyUrl = url("/api/v1/guest/payment/notify/{$this->method}/{$this->config['uuid']}");
@@ -44,7 +43,8 @@ class PaymentService
             $parseUrl = parse_url($notifyUrl);
             $notifyUrl = $this->config['notify_domain'] . $parseUrl['path'];
         }
-        $referer = rtrim($referer, '/');
+        
+        $referer = $referer ? rtrim($referer, '/') : url('');
 
         return $this->payment->pay([
             'notify_url' => $notifyUrl,

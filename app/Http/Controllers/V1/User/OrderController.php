@@ -201,7 +201,7 @@ class OrderController extends Controller
     {
         $tradeNo = $request->input('trade_no');
         $method = $request->input('method');
-        $referer = $request->headers->get('referer');
+        $referer = $request->headers->get('referer') ?? url('');
         $order = Order::where('trade_no', $tradeNo)
             ->where('user_id', $request->user['id'])
             ->where('status', 0)
