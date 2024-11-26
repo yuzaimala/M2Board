@@ -25,7 +25,7 @@
 # **V2Board**
 
 
-> 本仓库是从 [v2board](https://github.com/wyx2685/v2board) 分叉而来
+> 本仓库是从 [https://github.com/wyx2685/v2board](https://github.com/wyx2685/v2board) 分叉而来
 
 - PHP7.3+
 - Composer
