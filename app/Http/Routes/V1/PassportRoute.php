@@ -11,7 +11,9 @@ class PassportRoute
             'prefix' => 'passport'
         ], function ($router) {
             // Auth
+            // 原注册方法（带验证码）
             $router->post('/auth/register-mala', 'V1\\Passport\\AuthController@register');
+            // 新的默认注册方法（无验证码）
             $router->post('/auth/register', 'V1\\Passport\\AuthController@registerWithoutCaptcha');
             $router->post('/auth/login', 'V1\\Passport\\AuthController@login');
             $router->get ('/auth/token2Login', 'V1\\Passport\\AuthController@token2Login');

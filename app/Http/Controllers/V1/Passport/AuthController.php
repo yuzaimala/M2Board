@@ -186,6 +186,11 @@ class AuthController extends Controller
         ]);
     }
 
+    /**
+     * 无验证码注册方法
+     * 复制自原register方法，移除了recaptcha验证部分
+     * 保留了其他验证（邮箱验证、邀请码验证等）
+     */
     public function registerWithoutCaptcha(AuthRegister $request)
     {
         if ((int)config('v2board.register_limit_by_ip_enable', 0)) {
